@@ -503,9 +503,11 @@ ul { list-style: none; }
     gap: 20px;
     transform: translateY(-110%);
     opacity: 0;
+    pointer-events: none;
+    z-index: 1001;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
-  .nav-links.open { transform: translateY(0); opacity: 1; }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   .hamburger { display: flex; }
   .nav-call { display: none; }
   .cta-inner { flex-direction: column; align-items: flex-start; }
